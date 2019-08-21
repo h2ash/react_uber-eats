@@ -6,7 +6,7 @@
   background-color: white;
 
   &::before {
-    content: url($icon);
+    content: url('https://h2ash.github.io/react_uber-eats' + $icon);
     padding: 0 10px 0 16px;
   }
 }

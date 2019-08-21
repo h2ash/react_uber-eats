@@ -4,15 +4,6 @@ import Header from './components/Header'
 import Main from './components/Main'
 import { BASE_URL } from './api/constants'
 
-/**
- * [x] - сделать файл constants
- *    [x] - заимпортировать его в компонентах
- * [x] - разбить на компоненты, запушить
- * [] - сделать прямые ссылки на гитхаб
- * [] - запушить текущий результат
- */
-
-
 class App extends React.Component {
   state = {
     stores: [],
