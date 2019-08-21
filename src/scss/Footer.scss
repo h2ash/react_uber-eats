@@ -1,0 +1,54 @@
+.footer {
+  background-color: #262626;
+  padding: 70px 264px 92px 264px;
+
+  &__container {
+    width: 1450px;
+  }
+
+  &__upper-part {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+  }
+
+  &__logo-mobile {
+    margin-right: 542px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 65px;
+  }
+
+  &__mobile-app {
+    width: 135px;
+    height: 40px;
+
+    &:first-child {
+      padding-right: 16px;
+    }
+  }
+
+  &__list-about {
+    margin-right: 235px;
+  }
+
+  &__list-get-help {
+  }
+
+  &__list-link {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:first-child {
+      font-weight: 500;
+    }
+  }
+}

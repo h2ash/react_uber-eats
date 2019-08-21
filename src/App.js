@@ -2,7 +2,13 @@ import React from 'react';
 import './scss/App.scss';
 import Header from './components/Header'
 import Main from './components/Main'
+import Footer from './components/Footer'
 import { BASE_URL } from './api/constants'
+
+/**
+ * [] - footer component
+ *    [] - поправить семантику футера-верха
+ */
 
 class App extends React.Component {
   state = {
@@ -34,7 +40,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main stores={stores} />
-
+        <Footer />
       </div>
     )
   }
