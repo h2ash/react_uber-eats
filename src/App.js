@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.scss';
-import { statement } from '@babel/template';
-import { async } from 'q';
+import './scss/App.scss';
 
 const BASE_URL = 'https://h2ash.github.io/react_uber-eats/api';
 const IMG_URL = 'https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2';
@@ -19,7 +17,7 @@ class App extends React.Component {
   }
 
   getData = async () => {
-    const response = 
+    const response =
       await fetch(`${BASE_URL}/location/ChIJdd4hrwug2EcRmSrV3Vo6llI.json`);
     const result = await response.json();
 
@@ -45,22 +43,40 @@ class App extends React.Component {
                 alt="Logo"
               />
             </a>
-      
+
             <button className='header__location'>Location</button>
             <button className='header__delivery-time'>Delivery now</button>
             <button className='header__search'>Search</button>
             <a href="" className='header__sign-in'>Sign</a>
           </div>
         </header>
+
         <main>
-          <ul>
+          <ul className='main__container'>
             {
               stores.map(store => (
-                <li>{store.title}</li>
+                <li className='main__card'>
+                  <img
+                    className='main__card-image'
+                    src={store.heroImageUrl}
+                    alt="Food photo" />
+                  <div className='main__card-title'>{store.title}</div>
+                  <ul className='main__card-categories-list'>
+                    {store.categories.map(category => (
+                      <li className='main__card-categories-item'>
+                        {category}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className={store.etaRange ? 'main__card-time' : ''}>
+                    {store.etaRange && store.etaRange.text}
+                  </div>
+                </li>
               ))
             }
           </ul>
         </main>
+
       </div>
     )
   }
