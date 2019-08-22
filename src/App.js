@@ -8,6 +8,8 @@ import { BASE_URL } from './api/constants'
 /**
  * [] - footer component
  *    [] - поправить семантику футера-верха
+ *        [] - до этого ещё не дошёл, 
+ *             а уже какая-то шляпа с центрированием футера
  */
 
 class App extends React.Component {

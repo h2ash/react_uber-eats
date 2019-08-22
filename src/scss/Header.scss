@@ -7,41 +7,55 @@
 
   &::before {
     content: url('https://h2ash.github.io/react_uber-eats' + $icon);
-    padding: 0 10px 0 16px;
   }
 }
 
-.container {
-  width: 1450px;
-  margin: 0 auto;
-}
 
 .header {
+  display: grid;
+  grid-template-columns: 1450px;
+  justify-content: center;
 
   &__container {
-    height: 80px;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 80px;
     align-items: center;
   }
 
+  &__logo-link {
+    margin-right: 222px;
+  }  
+
   &__location {
-    margin-left: 222px;
+    padding: 0;
+    margin-right: 60px;
     @include buttoWithIcon('/img/location.svg');
+
+    &::before {
+      padding: 0 13px 0 0;
+    }
   }
 
   &__delivery-time {
-    margin-left: 60px;
+    padding: 0;
+    margin-right: 650px;
     @include buttoWithIcon('/img/delivery.svg');
+    &::before {
+      padding: 0 12px 0 0;
+    }
   }
 
   &__search {
-    margin-left: auto;
+    padding: 0;
+    margin-right: 40px;
     @include buttoWithIcon('/img/search.svg');
+    &::before {
+    padding: 0 8px 0 0;
+    }
   }
 
   &__sign-in {
-    margin-left: 40px;
     color: black;
     text-decoration: none;
   }

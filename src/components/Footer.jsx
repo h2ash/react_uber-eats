@@ -28,7 +28,7 @@ const Footer = () => (
         </div>
   
         <div className='footer__list-about'>
-          <a href="" className='footer__list-link footer__list-link-bold'>
+          <a href="" className='footer__list-link'>
             About UberEats
           </a>
           <a href="" className='footer__list-link'>Read our blog</a>

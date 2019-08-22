@@ -3,7 +3,7 @@ import { IMG_URL } from '../api/constants'
 
 const Header = () => (
   <header className='header'>
-    <div className='container header__container'>
+    <div className='header__container'>
       <a href="" className='header__logo-link'>
         <img
           className='header__logo-image'
@@ -12,7 +12,7 @@ const Header = () => (
         />
       </a>
 
-      <button className='header__location'>Location</button>
+      <button className='header__location'>London</button>
       <button className='header__delivery-time'>Delivery now</button>
       <button className='header__search'>Search</button>
       <a href="" className='header__sign-in'>Sign</a>

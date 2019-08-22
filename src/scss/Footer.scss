@@ -3,12 +3,16 @@
   padding: 70px 264px 92px 264px;
 
   &__container {
-    width: 1450px;
+    display: grid;
+    grid-template-columns: 1450px;
+    justify-content: center;
   }
 
   &__upper-part {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    //with right margin
+    grid-template-columns: 828px 375px 98px;
+    justify-content: center;
     padding-bottom: 40px;
     border-bottom: 1px solid white;
   }
@@ -33,9 +37,6 @@
 
   &__list-about {
     margin-right: 235px;
-  }
-
-  &__list-get-help {
   }
 
   &__list-link {
